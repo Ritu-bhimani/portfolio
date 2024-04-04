@@ -1,0 +1,126 @@
+@media (max-width:991px) {
+    .banner1-btn,
+    .banner2-btn {
+        display: none;
+    }
+    .footer-btn {
+        display: none;
+    }
+}
+
+/* sm */
+@media (min-width:576px) {
+    /* header */
+    .logo img {
+        padding: 10px 0;
+    }
+    .main-btn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+    /* banner */
+    .carousel-caption h5 {
+        font-size: 10px;
+        font-weight: 100
+    }
+    .carousel-caption h2 {
+        font-size: 22px;
+    }
+    .count-content {
+        margin: 0 15px;
+    }
+    .count .zero {
+        font-size: 30px;
+    }
+    .count-content span {
+        font-size: 12px;
+    }
+    .carousel-button img {
+        width: 30px;
+    }
+    /* cooking class */
+    .cooking-class{
+        padding: 0 0;
+    }
+    .avtar-1 {       
+        top: 245px;
+    }
+    .class-content {      
+        margin-bottom: 15px;
+    }
+    /* faq */
+    iframe{
+        margin-top: 20px;       
+    }
+    /* team chef */
+    .team-chef{
+margin-top: 20px;
+    }
+    /* form */
+    input{
+        margin: 10px 0;
+    }
+    /* blog */
+    .class-content {
+        margin-bottom: 15px;
+    }
+
+}
+
+/* md */
+@media (min-width:768px) {
+    /* header */
+    .main-btn {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+    /* banner */
+    .carousel-caption h5 {
+        font-size: 12px;
+        font-weight: 100
+    }
+    .carousel-caption h2 {
+        font-size: 32px;
+    }
+    .count-content {
+        margin: 0 30px;
+    }
+    /* cooking class */
+    .avtar-1 {       
+        top:130px;
+    }
+    /* review */
+    /* .review-content{
+        order: 2;
+    }
+    .review-img{
+        order: 1;
+    } */
+}
+
+/* lg */
+@media (min-width:992px) {
+    /* header */
+    .main-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    /* banner */
+    .carousel-caption h5 {
+        font-size: 16px;
+        font-weight: 400
+    }
+    .carousel-caption h2 {
+        font-size: 55px;
+    }
+    .count-content {
+        margin: 0 55px;
+    }
+    .count .zero {
+        font-size: 60px;
+    }
+    .count-content span {
+        font-size: 12px;
+    }
+
+}

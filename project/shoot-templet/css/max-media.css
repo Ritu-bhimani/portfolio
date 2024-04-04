@@ -1,0 +1,102 @@
+/* xl */
+@media (max-width:1399px){
+    .container{
+        max-width: 1140px;
+    }
+}
+/* lg */
+@media (max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+   
+}
+/* md */
+@media (max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+    .w-md-1{
+        width: 100%;
+    }
+    .w-md-2{
+        width:50%;
+    }
+    .w-md-3{
+        width: 33.33%;
+    }
+    .menu i {
+        color: black;
+    }
+    .shooting-content{
+        margin-bottom: 20px
+    }
+    .shap,.shap2,.shap3,.shap4,.shap5{
+        display: none;
+    }
+    .gallery-round::after{
+        display: none;
+    }   
+    .gallery-part1{       
+        order: 1;
+    }
+    .gallery-part2{       
+        order: 4;
+    }
+    .gallery-part3{       
+        order: 4;
+    }
+    .gallery-part4{
+        order: 2;
+    }
+    .work-content{
+        margin-top: 20px;
+    }
+    .work::after{
+        display: none;
+    }
+}
+/* sm */
+@media (max-width:767px){
+    .container{
+        max-width:540px;
+    }
+    .w-sm-2{
+        width:50%;
+    }
+}
+/* xs */
+@media (max-width:575px){
+    .container{
+        max-width: 340px;
+    }
+    .w-xs-1{
+        width:100%;
+    }
+    .w-xs-2{
+        width: 50%;
+    }
+    .shooting-content h2{
+        font-size: 45px; 
+    }
+    .shooting-content p{
+        font-size: 15px;
+    }
+    .best-shoot-title{
+        padding: 0;
+    }
+   .client-logo {
+        height: 75px;
+        width: 145px;
+   }
+   .round{
+    display: none;
+   }
+   .footer-title{
+text-align: center;
+   }
+   .footer-social{
+    margin-top: 20px;
+    text-align: center;
+   }
+}

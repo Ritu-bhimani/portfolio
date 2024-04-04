@@ -1,0 +1,222 @@
+:root {
+    --theme-color: #2acb35;
+    --light-color: white;
+    --bg-color:#f2fff3;
+    --border-color: #ebf8ec;
+    --text-color:#888888;
+    --dark-color:black;
+}
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Open Sans', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-btn{
+    padding: 12px 28px;
+    background-color: var(--theme-color);
+    color: var(--light-color);
+    transition: all 0.5s linear;
+}
+.main-btn:hover{
+      background-color: var(--light-color);
+    color: var(--theme-color);
+}
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+/* banner */
+.banner-content h3 {
+    font-family: 'Courgette', cursive;
+}
+
+.banner-content h1 {
+    font-size: 60px;
+    color: var(--theme-color);
+}
+
+.banner-content p {
+    font-size: 25px;
+}
+
+.banner-content .banner-btn1 {
+    padding: 12px 28px;
+    background-color: var(--theme-color);
+    color: var(--light-color);
+    transition: all 0.5s linear;
+}
+
+.banner-content .banner-btn1:hover {
+    background-color: var(--light-color);
+    color: var(--theme-color);
+}
+
+.banner-content .banner-btn2 {
+    padding: 12px 28px;
+    background-color: var(--light-color);
+    color: var(--theme-color);
+    transition: all 0.5s linear;
+}
+
+.banner-content .banner-btn2:hover {
+    background-color: var(--theme-color);
+    color: var(--light-color);
+}
+
+/* about */
+.butterfly img::after {
+    content: '';
+    border: 1px solid var(--theme-color);
+    position: absolute;
+    top: 22px;
+    left: 110px;
+    width: 180px
+}
+.about-content h2{
+    /* font-family: 'Courgette', cursive; */
+    color: var(--theme-color);
+    font-size: 35px;
+}
+.about-content h5{
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+    color: var(--theme-color);
+}
+.about-content span:first-child{
+    color: var(--theme-color);
+    margin-left: 10px;
+
+}
+/* pocedure */
+.procedure{
+    background-color: var(--bg-color);
+}
+.butterfly{
+    position: relative;
+    top: 80px;
+    right: 150px;
+}
+.butterfly img{
+    color: var(--theme-color);
+}
+.butterfly::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 45px;
+    width: 100px;
+    height: 2px;
+    background:var(--theme-color);
+    margin: 14px 0;
+}
+.butterfly::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 45px;
+    width: 100px;
+    height: 2px;
+    background:var(--theme-color);
+    margin: 14px 0;
+}
+.procedure-content h5{
+    color: var(--theme-color);
+}
+/* Treat */
+.Treat {
+    background: url(../image/bg-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Treat .h1{
+    /* color: var(--theme-color); */
+    font-weight: 800;
+}
+.appoTreatnment h6{
+    line-height: 30px;
+}  
+/* blog */
+/* form */
+.form-detail{
+    color: var(--theme-color);    
+    font-family: 'Courgette', cursive;
+}
+.apoinment{
+    background:url(../image/bg3.jpg);
+}
+/* gallery */
+.gallery .gallery-img:hover .gallery-content{
+    transform: scale(1);
+    opacity: 1;
+}
+.gallery .gallery-content{
+    height:95%;
+    background-color: #00000096;    
+    font-size: 25px;
+    transform: scale(0.8);
+    opacity: 0;  
+    transition: all 0.5s linear;
+}
+.gallery .gallery-content h3{
+    color: var(--theme-color);
+}
+.gallery .gallery-content p{
+    color: var(--light-color);
+}
+/* trust */
+.trust img{
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
+.trust img:hover{
+ transform: scale(0.8);
+}
+/* faq */
+.faq{
+    background-image: url(../image/bg2.jpg);
+}
+/* count */
+.count{
+    background-image: url(../image/count-bg.jpg); 
+    color: var(--theme-color);
+}
+.count-content:hover{
+ color: var(--light-color);
+}
+/* footer */
+footer{
+    color: var(--text-color);
+    background-color:var(--dark-color) ;
+}
+.footer-contact-info i{
+    color:var(--theme-color);
+    transition: all 0.5s linear;
+}
+.footer-contact-info i:hover{
+    transform: scale(0.8);
+}
+footer .link-hover:hover{
+    color: var(--theme-color);
+}
+.footer-social{
+    transition: all 0.5s linear;
+}
+.footer-social:hover{
+    color: var(--theme-color);
+    transform: scale(0.8);
+
+}

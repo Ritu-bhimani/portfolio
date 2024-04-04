@@ -1,0 +1,77 @@
+/* max-width */
+
+
+/* xl */
+@media (max-width:1399px) {
+    .container{
+        max-width: 1140px;
+    }
+
+}
+/* lg*/
+@media (max-width:1199px) {
+    .container{
+        max-width: 960px;
+    }
+    
+}
+
+
+/* md */
+@media (max-width:991px) {
+    .container{
+    max-width:  720px;
+}
+.topbar{
+    display: none;
+}
+.expertise-part{
+    width: 100%;
+    text-align: center;
+}
+.cone-icecream{
+    margin: 10px 0;
+}
+.flavour-row{
+    width: 50%;
+}
+.flavour-item::after {
+       left: 79px;
+}
+.shop-row{
+    width: 50%;
+}
+.kitchen .img2::after {   
+    left: 13px;
+}
+.special-row{
+    width: 100%;
+}
+.treat-row{
+    width: 50%;
+}
+.news-row{
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+}
+}
+
+/* sm */
+@media (max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+
+
+
+}
+/* xs */
+@media (max-width:575px) {
+    .container{
+        max-width: 100%;
+    
+}
+
+
+}

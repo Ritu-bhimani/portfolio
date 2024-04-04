@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salimo</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/remixicon.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/min-media.css">
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="loader-overlay">
+        <div class="d-flex flex-column">
+            <img src="images/lodider-logo.png" alt="" style="width: 100px;"
+                class=" wow animate__animated animate__slideInUp">
+            <img src="images/loader-gif.svg" alt="" class="wow animate__animated animate__slideInUp  ">
+        </div>
+    </div>
+    <!-- ---------------------------------------------------ofcanvas---------------------------------------------------->
+    <div class="offcanvas offcanvas-start" id="abc" data-bs-scroll="true">
+        <div class="offcanvas-header">
+            <a href="#" class="text-decoration-none logo ">
+                <h3 class="text-dark"><i class="fa fa-heart" aria-hidden="true"></i><span>SALIMO</span><i
+                        class="fa fa-heart" aria-hidden="true"></i></h3>
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="navbar-collapse justify-content-center">
+                <ul class="navbar-nav ">
+                    <li><a href="#" class="nav-link text-dark pe-3"> <i class="ri-home-4-line me-1"></i> HOME</a></li>
+                    <li><a href="#" class="nav-link text-dark pe-3"> <i class="ri-user-fill me-1"></i> ABOUT</a></li>
+                    <li><a href="#" class="nav-link text-dark pe-3"><i class="ri-settings-5-fill me-1"></i> SERVICES</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-dark pe-3"><i class="ri-image-line me-1"></i> PORTFOLIO</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-dark pe-3"> <i class="ri-user-fill me-1"></i> TEAM</a></li>
+                    <li><a href="#" class="nav-link text-dark pe-3"> <i class="ri-question-answer-line me-1"></i>
+                            BLOG</a></li>
+                    <li><a href="#" class="nav-link text-dark pe-3"> <i class="ri-mail-fill me-1"></i>CONTECT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- header start -->
+    <header class="position-fixed w-100 ">
+        <div class="navbar navbar-expand-lg  py-3">
+            <div class="container d-flex ">
+                <div>
+                    <!-- <a href="#"><img src="images/logo.png" width="180px" alt=""></a> -->
+                    <a href="#" class="text-decoration-none logo">
+                        <h3><i class="fa fa-heart" aria-hidden="true"></i><span>SALIMO</span><i class="fa fa-heart"
+                                aria-hidden="true"></i></h3>
+                    </a>
+                </div>
+                <div class="order-lg-1">
+                    <button class="navbar-toggler me-2 " data-bs-toggle="offcanvas" data-bs-target="#abc">
+                        <label class="navbar-toggler-icon text-white"></label>
+                    </button>
+                </div>
+                <nav class=" collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center ms-3 " aria-current="page" href="#">
+                                <i class="ri-home-4-line me-1"></i>
+                                HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center ms-3" href="#">
+                                <i class="ri-user-fill me-1"></i>
+                                ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center ms-3" href="#">
+                                <i class="ri-settings-5-fill me-1"></i>
+                                SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center ms-3" href="#">
+                                <i class="ri-image-line me-1"></i>PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link d-flex align-items-center ms-3" href="#">
+                                <i class="ri-user-fill me-1"></i>
+                                TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center ms-3" href="#">
+                                <i class="ri-question-answer-line me-1"></i>
+                                BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center ms-3" href="#">
+                                <i class="ri-mail-fill me-1"></i>
+                                CONTECT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- banner start -->
+        <section class="banner">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1">
+                        <img src="images/banner1.jpg" width="65px" height="65px" class="rounded rounded-circle"
+                            data-toggle="tooltip" title="WE ARE SALIMO" alt="">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2">
+                        <img src="images/banner2.jpg" width="65px" height="65px" class="rounded rounded-circle"
+                            data-toggle="tooltip" title="WE ARE CREATIVE" alt="">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                        <img src="images/banner3.jpg" width="65px" height="65px" class="rounded rounded-circle"
+                            data-toggle="tooltip" title="WE ARE THE BEST" alt="">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4">
+                        <img src="images/banner4.jpg" width="65px" height="65px" class="rounded rounded-circle"
+                            data-toggle="tooltip" title="WE ARE LEADER" alt="">
+                    </button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="banner-layer">
+                            <img src="images/banner1.jpg" class="d-block w-100 vh-100" alt="...">
+                        </div>
+                        <div
+                            class="carousel-caption top-50 start-50 translate-middle position-absolute wow animate__animated animate__fadeInUp  banner-content">
+                            <h2 class=" fw-bold wow animate__animated animate__fadeInLeft animate_slower">WE ARE SALIMO
+                            </h2>
+                            <p class=" my-4 wow animate__animated animate__fadeInUp ">CREATIVE ONE PAGE TEMPLATE</p>
+                            <a href="#"
+                                class="btn banner1-btn me-3 wow animate__animated animate__fadeInUp animate__slower">
+                                <span class=" d-block">LEARN MORE ABOUT US
+                                    <i class="ri-arrow-down-line position-absolute"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner-layer">
+                            <img src="images/banner2.jpg" class="d-block w-100 vh-100" alt="...">
+                        </div>
+                        <div
+                            class="carousel-caption top-50 start-50 translate-middle position-absolute wow animate__animated animate__fadeInUp  banner-content">
+                            <h2 class=" fw-bold wow animate__animated animate__fadeInLeft animate_slower">WE ARE
+                                CREATIVE </h2>
+                            <p class=" my-4 wow animate__animated animate__fadeInUp ">TEAM IN THE BIG TELENTS</p>
+                            <a href="#"
+                                class="btn banner1-btn me-3 wow animate__animated animate__fadeInUp animate__slower">
+                                <span class=" d-block ">LEARN MORE ABOUT US
+                                    <i class="ri-arrow-down-line position-absolute"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner-layer">
+                            <img src="images/banner3.jpg" class="d-block w-100 vh-100" alt="...">
+                        </div>
+                        <div
+                            class="carousel-caption top-50 start-50 translate-middle position-absolute wow animate__animated animate__fadeInUp  banner-content">
+                            <h2 class=" fw-bold wow animate__animated animate__fadeInLeft animate_slower">WE ARE THE
+                                BEST </h2>
+                            <p class=" my-4 wow animate__animated animate__fadeInUp ">COMPANY IN THE WORLD</p>
+                            <a href="#"
+                                class="btn banner1-btn me-3 wow animate__animated animate__fadeInUp animate__slower">
+                                <span class=" d-block">LEARN MORE ABOUT US
+                                    <i class="ri-arrow-down-line position-absolute"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner-layer">
+                            <img src="images/banner4.jpg" class="d-block w-100 vh-100" alt="...">
+                        </div>
+                        <div
+                            class="carousel-caption top-50 start-50 translate-middle position-absolute wow animate__animated animate__fadeInUp  banner-content">
+                            <h2 class=" fw-bold wow animate__animated animate__fadeInLeft animate_slower">WE ARE LEADER
+                            </h2>
+                            <p class=" my-4 wow animate__animated animate__fadeInUp ">IN WEB DESIGN & DEVLOPMENT</p>
+                            <a href="#"
+                                class="btn banner1-btn me-3 wow animate__animated animate__fadeInUp animate__slower">
+                                <span class=" d-block">LEARN MORE ABOUT US
+                                    <i class="ri-arrow-down-line position-absolute"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev prev" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next next next2" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <!-- banner end -->
+        <!-- about start -->
+        <section class="py-5">
+            <div class="container ">
+                <div class="main-title d-flex justify-content-center align-items-center flex-column">
+                    <h1 class="fw-bold display-5"><span>ABOUT</span> US</h1>
+                    <h5 class="fw-light">WHO WE ARE</h5>
+                    <div class="line my-2 mb-5">
+                        <i class="ri-user-3-fill"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="about">
+                            <h3 class="title-about">WE ARE <strong>SALIMO</strong></h3>
+                            <hr>
+                            <p>We are a leading company sit amet, consectetur adipisicing elit. Minus obcaecati pariatur
+                                officiis molestias eveniet harum laudantium obcaecati pariatur officiis molestias
+                                eveniet harum laudantium sed optio iste. </p>
+                            <ul class="nav nav-tabs">
+                                <li><a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">OUR
+                                        MISSION</a></li>
+                                <li><a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#tab2">OUR
+                                        ADVANTAGES</a></li>
+                                <li><a href="#" class="nav-link " data-bs-toggle="tab" data-bs-target="#tab3">OUR
+                                        GUARANTEES</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane  fadeshow  my-4 active" id="tab1">
+                                    <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea consequat. Duis aute irure dolor.</p>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane  fadeshow my-4" id="tab2">
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane  fadeshow my-4" id="tab3">
+                                    <p>Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn banner1-btn me-3 ">
+                                <span class=" d-block">OUR PORTFOLIO
+                                    <i class="ri-image-line position-absolute"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-img mt-3">
+                            <img class="img-fluid" src="images/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+        <!-- project manager start -->
+        <section class="project-menager">
+            <div class="container ">
+                <div class="project">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="project-img">
+                                <img src="images/projectmanager.jpg" alt="" class="rounded rounded-circle">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="project-maneger-content">
+                                <h2>Project Manager</h2>
+                                <h3>Miss Katherina Hale</h3>
+                                <p class="fst-italic text-light">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus obcaecati pariatur
+                                    officiis molestias eveniet harum laudantium sed optio iste. Iste, alias, non libero
+                                    recusandae fugiat praesentium delectus inventore accusamus veniam!
+                                </p>
+                                <blockquote class="text-light fw-lighter mt-4">
+                                    " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    "
+                                </blockquote>
+                                <div class="project-social-icons">
+                                    <ul class="d-flex list-unstyled">
+                                        <li class="rounded rounded-circle text-center d-inline-block m-2">
+                                            <a href="#" class=" d-block text-decoration-none " title="twitter">
+                                                <i class="ri-twitter-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="rounded rounded-circle text-center d-inline-block m-2">
+                                            <a href="#" class=" d-block text-decoration-none " title="facebook">
+                                                <i class="ri-facebook-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="rounded rounded-circle text-center d-inline-block m-2">
+                                            <a href="#" class=" d-block text-decoration-none " title="skype">
+                                                <i class="ri-skype-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="rounded rounded-circle text-center d-inline-block m-2">
+                                            <a href="#" class=" d-block text-decoration-none " title="instagram">
+                                                <i class="ri-instagram-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="rounded rounded-circle text-center d-inline-block m-2">
+                                            <a href="#" class=" d-block text-decoration-none " title="linkedin">
+                                                <i class="ri-linkedin-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="rounded rounded-circle text-center d-inline-block m-2">
+                                            <a href="#" class=" d-block text-decoration-none " title="youtube">
+                                                <i class="ri-youtube-fill"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- project manager end -->
+        <!-- service start -->
+        <section class="service py-5">
+            <div class="container ">
+                <div class="main-title d-flex justify-content-center align-items-center flex-column">
+                    <h1 class="fw-bold display-5 "><span>OUR</span> SERVICES</h1>
+                    <h5 class="fw-light">WHAT WE DOING</h5>
+                    <div class="line my-2 mb-5">
+                        <img src="images/sertting-icon.png" alt="" width="30px">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                        <div class="flip">
+                            <div class="front">
+                                <i class="ri-leaf-fill"></i>
+                                <h4>Creative Solutions</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu.</p>
+                            </div>
+                            <div class="back">
+                                <i class="ri-leaf-fill fs-1"></i>
+                                <h3>Creative Solutions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                        <div class="flip">
+                            <div class="front">
+                                <i class="ri-anchor-line"></i>
+                                <h4>Creative Solutions</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu.</p>
+                            </div>
+                            <div class="back">
+                                <i class="ri-anchor-line fs-1"></i>
+                                <h3>Creative Solutions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                        <div class="flip">
+                            <div class="front">
+                                <i class="fa-solid fa-comments"></i>
+                                <h4>Creative Solutions</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu.</p>
+                            </div>
+                            <div class="back">
+                                <i class="fa-solid fa-comments fs-1"></i>
+                                <h3>Creative Solutions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                        <div class="flip">
+                            <div class="front">
+                                <i class="ri-football-line"></i>
+                                <h4>Creative Solutions</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu.</p>
+                            </div>
+                            <div class="back">
+                                <i class="ri-football-line fs-1"></i>
+                                <h3>Creative Solutions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                        <div class="flip">
+                            <div class="front">
+                                <i class="ri-settings-3-line"></i>
+                                <h4>Creative Solutions</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu.</p>
+                            </div>
+                            <div class="back">
+                                <i class="ri-settings-3-line fs-1"></i>
+                                <h3>Creative Solutions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                        <div class="flip">
+                            <div class="front">
+                                <i class="ri-file-pdf-line"></i>
+                                <h4>Creative Solutions</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu.</p>
+                            </div>
+                            <div class="back">
+                                <i class="ri-file-pdf-line fs-1"></i>
+                                <h3>Creative Solutions</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service end -->
+        <!-- happy customer start -->
+        <section class="customer">
+            <div class="container">
+                <div class="main-title d-flex justify-content-center align-items-center flex-column py-5">
+                    <h1 class="fw-bold display-5 text-light"><span>HAPPY</span> CUSTOMERS</h1>
+                    <h5 class="fw-light text-light">TESTIMONIALS</h5>
+                </div>
+                <div class="review text-light text-center pb-5">
+                    <div class="review-content">
+                        <div>
+                            <img src="images/client1.jpg" alt=""
+                                class="rounded rounded-circle m-auto border border-5 border-light">
+
+                        </div>
+                        <p class="fst-italic">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu nt
+                            ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat. ”</p>
+                        <h4>MISS ELINA POOL</h4>
+                        <h6 class="fs-5 fw-light">Web Developer - Adobe</h6>
+                    </div>
+
+                    <div class="review-content">
+                        <img src="images/client2.jpg" alt=""
+                            class="rounded rounded-circle m-auto border border-5 border-light">
+                        <p class="fst-italic">“ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu. ”</p>
+                        <h4>MR. ANTOINE VARANE</h4>
+                        <h6 class="fs-5 fw-light">Sales Manager - Twitter</h6>
+                    </div>
+                    <div class="review-content">
+                        <img src="images/client3.jpg" alt=""
+                            class="rounded rounded-circle m-auto border border-5 border-light">
+                        <p class="fst-italic">“ Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit ess. ”</p>
+                        <h4>MISS LUCY WALKER</h4>
+                        <h6 class="fs-5 fw-light">Project Manager - Envatoe</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- happy customer end -->
+        <!-- portfolio start -->
+        <section class="py" id="portfolio">
+            <div class="container">
+                <div class="portfolio">
+                    <div class="col-md-12">
+                        <div class="main-title d-flex justify-content-center align-items-center flex-column">
+                            <h1 class="fw-bold display-5 "><span>OUR</span> PORTFOLIO</h1>
+                            <h5 class="fw-light ">OUR LATEST WORKS</h5>
+                            <div class="line my-2">
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap my-0 mx-auto  py-4">
+                        <div class="gallery-wrap">
+                            <ul id="filters" class="clearfix d-flex justify-content-center m-3 p-0 overflow-hidden">
+                                <li class="list-unstyled mx-2 my-2"><span
+                                        class="filter active d-block px-4 py-1 rounded-pill"
+                                        data-filter=".Images, .Videos, .Link"><i class="fa-solid fa-bars pe-1"></i>All
+                                        Projects</span></li>
+                                <li class="list-unstyled mx-2 my-2"><span class="filter d-block px-4 py-1 rounded-pill"
+                                        data-filter=".Images">Images</span></li>
+                                <li class="list-unstyled mx-2 my-2"><span class="filter d-block px-4 py-1 rounded-pill"
+                                        data-filter=".Videos">Videos</span></li>
+                                <li class="list-unstyled mx-2 my-2"><span class="filter d-block px-4 py-1 rounded-pill"
+                                        data-filter=".Link">External Link</span></li>
+                            </ul>
+                            <div id="gallery">
+                                <div class="row">
+                                    <div class="gallery-item p-2 position-relative Images">
+                                        <a href="images/project-1.jpg" data-cat="Images" data-fancybox="gallery">
+                                            <div class="col-lg-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-1.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i class="fa-solid fa-magnifying-glass fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">SINGLE IMAGE</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                    <div class="gallery-item p-2 position-relative Videos">
+                                        <a href="https://youtu.be/0gv7OC9L2s8" data-cat="Videos"
+                                            data-fancybox="gallery">
+                                            <div class="col-md-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-2.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i class="fa-solid fa-play fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">YOUTUBE VIDEO</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                    <div class="gallery-item p-2 position-relative Images">
+                                        <a href="images/project-3.jpg" data-cat="Images" data-fancybox="gallery">
+                                            <div class="col-md-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-3.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i class="fa-solid fa-images fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">GALLERY PHOTOS</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                    <div class="gallery-item p-2 position-relative Link">
+                                        <a href="images/project-4.jpg" data-cat="Link" data-fancybox="gallery">
+                                            <div class="col-md-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-4.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i
+                                                                class="fa-solid fa-square-arrow-up-right fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">EXTERNAL LINK</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                    <div class="gallery-item p-2 position-relative Images">
+                                        <a href="images/project-5.jpg" data-cat="Images" data-fancybox="gallery">
+                                            <div class="col-md-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-5.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i class="fa-solid fa-magnifying-glass fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">SINGLE IMAGE</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                    <div class="gallery-item p-2 position-relative Videos">
+                                        <a href="https://youtu.be/O_C5CN1L3Xo" data-cat="Videos"
+                                            data-fancybox="gallery">
+                                            <div class="col-md-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-6.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i class="fa-solid fa-play fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">YOUTUBE VIDEO</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                    <div class="gallery-item p-2 position-relative Images">
+                                        <a href="images/project-7.jpg" data-cat="Images" data-fancybox="gallery"
+                                            data-fancybox="gallery">
+                                            <div class="col-md-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-7.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i class="fa-solid fa-magnifying-glass fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">SINGLE IMAGE</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                    <div class="gallery-item p-2 position-relative Videos">
+                                        <a href="https://vimeo.com/23534361" data-cat="Videos" data-fancybox="gallery">
+                                            <div class="col-md-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-8.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i class="fa-solid fa-play fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">VIMEO VIDEO</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                    <div class="gallery-item p-2 position-relative Images">
+                                        <a href="images/project-9.jpg" data-cat="Images" data-fancybox="gallery">
+                                            <div class="col-md-4">
+                                                <div class="inside">
+                                                    <div>
+                                                        <img src="images/project-9.jpg" alt="" width="310px"
+                                                            class="my-2 rounded position-relative">
+                                                        <div
+                                                            class="overlay position-absolute rounded d-flex justify-content-center align-items-center fs-5">
+                                                            <i class="fa-solid fa-magnifying-glass fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="portfolio-content">
+                                            <h6 class="ps-3 mt-2">SINGLE IMAGE</h6>
+                                        </div>
+                                        <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio end -->
+        <!-- cool fact start -->
+        <section class="facts py-5">
+            <div class="main-title d-flex justify-content-center align-items-center flex-column py-5">
+                <h1 class="fw-bold display-5 text-light"><span>COOL</span> FACTS</h1>
+                <h5 class="fw-light text-light">OUR NUMBERS</h5>
+            </div>
+            <div id="counter-stats" data-wow-duration="1.4s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-lg-4 stats">
+                            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                            <span class="d-flex flex-row justify-content-center">
+                                <div class="counting fw-bold" data-count="77">0 </div>
+                                +
+                            </span>
+                            <h6 class="text-light fw-bold">PROJECTS</h6>
+                        </div>
+
+                        <div class="col-md-2 col-lg-4 stats">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <span class="d-flex flex-row justify-content-center">
+                                <div class="counting fw-bold" data-count="80">0 </div>
+                                +
+                            </span>
+                            <h6 class="text-light fw-bold">HOURS WORK</h6>
+                        </div>
+
+                        <div class="col-md-2 col-lg-4 stats">
+                            <i class="fa-solid fa-house-chimney" aria-hidden="true"></i>
+                            <span class="d-flex flex-row justify-content-center">
+                                <div class="counting fw-bold" data-count="18">0 </div>
+                                +
+                            </span>
+                            <h6 class="text-light fw-bold">OFFICES</h6>
+                        </div>
+
+                        <div class="col-md-2 col-lg-4 stats">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                            <span class="d-flex flex-row justify-content-center">
+                                <div class="counting fw-bold" data-count="67">0 </div>
+                                +
+                            </span>
+                            <h6 class="text-light fw-bold">CLIENTS</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cool fact end -->
+        <!-- team start -->
+        <section class="py-5">
+            <div class="container">
+                <div class="main-title d-flex justify-content-center align-items-center flex-column py-5">
+                    <h1 class="fw-bold display-5"><span>OUR</span> TEAM</h1>
+                    <h5 class="fw-light">KEEP IN TOUCH</h5>
+                    <div class="line my-2">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-lg-4">
+                        <div class="team-section">
+                            <a href="images/team1.jpg" data-fancybox="abc1">
+                                <div class="team-img">
+                                    <img src="images/team1.jpg" alt="" class="w-100 h-100 ">
+                                    <div class="team-social d-flex align-items-center justify-content-center">
+                                        <ul class="d-flex align-items-center justify-content-center">
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </li>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </li>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-google-plus-g"></i>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="team-content text-center py-3">
+                                <h5>MARYANA MORI </h5>
+                                <p class="fst-italic">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-4">
+                        <div class="team-section">
+                            <a href="images/team2.jpg" data-fancybox="abc1">
+                                <div class="team-img ">
+                                    <img src="images/team2.jpg" alt="" class="w-100 img-fluid ">
+                                    <div class="team-social d-flex align-items-center justify-content-center">
+                                        <ul>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </li>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </li>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-google-plus-g"></i>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="team-content text-center py-3">
+                                <h5>MARCO VERRATTI</h5>
+                                <p class="fst-italic">Co Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-4">
+                        <div class="team-section">
+                            <a href="images/team3.jpg" data-fancybox="abc1">
+                                <div class="team-img">
+                                    <img src="images/team3.jpg" alt="" class="w-100 img-fluid">
+                                    <div class="team-social d-flex align-items-center justify-content-center">
+                                        <ul>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </li>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </li>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-google-plus-g"></i>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="team-content text-center py-3">
+                                <h5>EMILIA BELLA</h5>
+                                <p class="fst-italic">Sales Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-4">
+                        <div class="team-section">
+                            <a href="images/team4.jpg" data-fancybox="abc1">
+                                <div class="team-img">
+                                    <img src="images/team4.jpg" alt="" class="w-100 img-fluid">
+                                    <div class="team-social d-flex align-items-center justify-content-center">
+                                        <ul>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </li>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </li>
+                                            <li class="rounded rounded-circle text-center d-inline m-2">
+                                                <i class="fa-brands fa-google-plus-g"></i>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="team-content text-center py-3">
+                                <h5>ANTONIO CONTE</h5>
+                                <p class="fst-italic">Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team end -->
+        <!-- newsettler start -->
+        <section class="newsettler py-5">
+            <div class="main-title d-flex justify-content-center align-items-center flex-column py-5">
+                <h1 class="fw-bold display-5 text-light"><span>OUR</span> NEWSLETTER</h1>
+                <h5 class="fw-light text-light">KEEP IN TOUCH</h5>
+            </div>
+            <div class="container text-center text-light w-50">
+                <p>Sign up to our newsletter subscription and be the first to know about
+                    Important news & Amazing offers & Discounts</p>
+                <div class="con-input my-3">
+                    <input placeholder="Username" type="text">
+                    <i class="ri-mail-open-line icon-mail"></i>
+                </div>
+
+                <a href="#" class="btn banner1-btn my-2 px-5">
+                    <span class=" d-block fw-semibold">SUBSCRIBE NOW<i class="fa-solid fa-envelope"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!-- newsettler end -->
+        <!-- blog start -->
+        <section class=" py-5">
+            <div class="container">
+                <div class="main-title d-flex justify-content-center align-items-center flex-column py-5">
+                    <h1 class="fw-bold display-5 "><span>BLOG </span> POSTS</h1>
+                    <h5 class="fw-light ">LATEST ARTICLES</h5>
+                    <div class="line my-2">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="blog">
+                            <div class="blog-img position-relative">
+                                <img src="images/blog1.jpg" alt="" class="w-100 img-fluid">
+                                <div class="blog-img-date text-center">
+                                    <div>18 </div>
+                                    <div style="font-size:12px ;"> AUG</div>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <h5>HOW TO BE A GOOD FREELANCER ?</h5>
+                                <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blog">
+                            <div class="blog-img position-relative">
+                                <img src="images/blog2.jpg" alt="" class="w-100 img-fluid">
+                                <div class="blog-img-date text-center">
+                                    <div>23 </div>
+                                    <div style="font-size:12px ;"> JUN</div>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <h5>COLLABORATION WITH ENVATO</h5>
+                                <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blog">
+                            <div class="blog-img position-relative">
+                                <img src="images/blog3.jpg" alt="" class="w-100 img-fluid">
+                                <div class="blog-img-date text-center">
+                                    <div>1 </div>
+                                    <div style="font-size:12px ;"> JAN</div>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <h5>WHY THEMEFOREST IS BEST ?</h5>
+                                <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="#" class="btn banner1-btn me-3 ">
+                        <span class=" d-block">SEE ALL POST<i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- blog end -->
+        <!-- video start -->
+        <section class="video py-5">
+            <div class="main-title d-flex justify-content-center align-items-center flex-column py-4">
+                <h1 class="fw-bold display-5 text-light"><span>VIDEO</span>PROMO</h1>
+                <h5 class="fw-light text-light">MADE WITH LOVE FOR YOU</h5>
+            </div>
+            <div class="container text-center text-light w-50">
+                <p>We’re developing a number of special projects if interested,
+                    Don't hesitate to see the promo video</p>
+                <div class="video-icon text-center position-relative py-5">
+                    <a class="play-icon mfp-youtube " href="https://www.youtube.com/watch?v=0gv7OC9L2s8">
+                        <i class="fa-solid fa-play position-absolute top-50 start-50  translate-middle fs-3"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- video end -->
+        <!-- contect start -->
+        <section class="py-5">
+            <div class="main-title d-flex justify-content-center align-items-center flex-column ">
+                <h1 class="fw-bold display-5 "><span>CONTACT </span> US</h1>
+                <h5 class="fw-light ">GET IN TOUCH</h5>
+                <div class="line my-2">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div class="map py-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-74.25987584510595!3d40.69767006338158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1667672276333!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="container">
+                <div class="row info-map-boxes">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="info-map-boxes-item fa fa-clock">
+                            <h3>Working Hours</h3>
+                            <p>Monday-Thursday : 08:00–17:00
+                                <br>Friday-Saturday : 08:00–12:30
+                                <br>Sunday-Close
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="info-map-boxes-item fa fa-phone">
+                            <h3>Phone &amp; Online</h3>
+                            <p>Phone : +39 1873 2878
+                                <br>Fax : +49 (0) 123 456789-15
+                                <br><a href="#">salimo@yourdomain.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contect end -->
+        <!-- mail start -->
+        <section class="mail py-5">
+            <div class="main-title d-flex justify-content-center align-items-center flex-column py-4">
+                <h1 class="fw-bold display-5 text-light"><span>SEND US </span>AN EMAIL</h1>
+                <h5 class="fw-light text-light">WE ARE VERY RESPONSIVE TO MESSAGES</h5>
+            </div>
+            <div class="container">
+                <form class="w-75 mx-auto">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="con-input username-input">
+                                    <input placeholder="Username" type="text">
+                                    <i class="fa-solid fa-user icon-mail text-light"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="con-input">
+                                    <input placeholder="Username" type="text">
+                                    <i class="fa-regular fa-user icon-mail text-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea type="text" placeholder="Message"
+                                    class="form-control rounded-4 py-2 my-3 mb-5 h-100" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1 col-lg-2">
+                                <div class="con-input" style="margin-top:30px;">
+                                    <input placeholder="Username" type="text">
+                                    <i class="fa-solid fa-envelope icon-mail text-light"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-lg-2">
+                                <div style="margin-top:30px;">
+                                    <button href="#" class="btn banner1-btn btn2 me-3 d-block " type="submit"
+                                        style="padding:10px; width: 100%;">
+                                        <span class="d-block">SEND MESSAGE
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- mail start -->
+
+        <!-- logo end -->
+        <section class="team py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="marquee">
+                            <ul class="marquee__content">
+                                <li class="list-unstyled opacity-75"><img src="images/l1.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l2.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l3.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l4.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l5.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l6.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l7.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l1.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l2.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l3.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l4.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l5.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l6.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l7.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l1.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l2.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l3.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l4.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l5.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l6.png" alt=""></li>
+                                <li class="list-unstyled opacity-75"><img src="images/l7.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- logo end -->
+    </main>
+    <!-- footer start -->
+    <footer class="bg-dark text-center py-5 text-light">
+        <p class="fs-6 fw-semibold">SALIMO - ONE PAGE PARALLAX</p>
+        <p>© copyright 2017 salimo & designed with <span class="heart"> ❤</span> by celtano</p>
+        <div class="project-social-icons footer-social d-flex justify-content-center align-items-center">
+            <ul class="d-flex list-unstyled">
+                <li class="rounded rounded-circle text-center d-inline-block m-2">
+                    <a href="#" class=" d-block text-decoration-none " title="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="rounded rounded-circle text-center d-inline-block m-2">
+                    <a href="#" class=" d-block text-decoration-none " title="twitter">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+
+                <li class="rounded rounded-circle text-center d-inline-block m-2">
+                    <a href="#" class=" d-block text-decoration-none " title="facebook">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li class="rounded rounded-circle text-center d-inline-block m-2">
+                    <a href="#" class=" d-block text-decoration-none " title="skype">
+                        <i class="fa-brands fa-skype"></i>
+                    </a>
+                </li>
+                <li class="rounded rounded-circle text-center d-inline-block m-2">
+                    <a href="#" class=" d-block text-decoration-none " title="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="rounded rounded-circle text-center d-inline-block m-2">
+                    <a href="#" class=" d-block text-decoration-none " title="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="rounded rounded-circle text-center d-inline-block m-2">
+                    <a href="#" class=" d-block text-decoration-none " title="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- scroll top -->
+    <div class="top">
+        <i class="fa-solid fa-arrow-up first-arrow"></i>
+        <span><i class="fa-sharp fa-solid fa-arrow-up second-arrow"></i></span>
+    </div>
+    <!-- scroll top -->
+    <div class="top">
+        <i class="fa-solid fa-arrow-up first-arrow"></i>
+        <span><i class="fa-sharp fa-solid fa-arrow-up second-arrow"></i></span>
+    </div>
+    <!-- theme switcher -->
+    <div class="switch">
+        <div class="icon">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div>
+            <h4 class="ms-3" style="text-align: center; color:black; padding: 5px; border-bottom:1px solid grey ;">Style
+                Switcher
+                <i class="fa-solid fa-xmark close ms-4"></i>
+                <!-- <button type="button" class="btn-close fs-6 ms-4" aria-label="Close" data-bs-dismiss="switch"></button> -->
+            </h4>
+            <ul class="setting">
+                <li class="list-unstyled" style="color:  #007bff;"><img src="images/blue.png" alt=""></li>
+                <li class="list-unstyled" style="color:   #6610f2;"> <img src="images/blueviolet.png" alt=""></li>
+                <li class="list-unstyled" style="color:  #e9c810;"><img src="images/golden.png" alt=""></li>
+                <li class="list-unstyled" style="color:   #28a745;"><img src="images/darkgreen.png" alt=""></li>
+                <li class="list-unstyled" style="color:  #ff00ff;"><img src="images/pink.png" alt=""></li>
+            </ul>
+            <ul class="setting">
+                <li class="list-unstyled" style="color:  #fd7e14;"><img src="images/orange.png" alt=""></li>
+                <li class="list-unstyled" style="color:  #6f42c1;"><img src="images/purple.png" alt=""></li>
+                <li class="list-unstyled" style="color: #dc3545;"><img src="images/red.png" alt=""></li>
+                <li class="list-unstyled" style="color:  #ffc107;"><img src="images/yellow.png" alt=""></li>
+                <li class="list-unstyled" style="color:  #09cf38;"><img src="images/green.png" alt=""></li>
+            </ul>
+
+            <h4 class="ms-4" style="text-align: start; color:black; padding: 5px; border-bottom:1px solid grey ;">Body
+                Skin
+            </h4>
+            <ul class="settting2 d-flex">
+                <li style="background-color:white; height: 15px; width: 15px; border:1px solid black"
+                    class="light-body rounded-circle list-unstyled ms-3 me-1"></li><span
+                    style="color:var(--theme-dark)">Light</span>
+                <li style="background-color:black; height: 15px; width: 15px;"
+                    class="dark-body rounded-circle  list-unstyled ms-3 me-1"></li><span
+                    style="color:var(--theme-dark)">Dark</span>
+            </ul>
+            <hr />
+            <h4 class="ms-4" style="text-align: start; color:black; padding: 5px; border-bottom:1px solid grey ;">LAYOUT STYLE</h4>
+            <label class="ms-5 me-3 text-dark">
+                <input type="radio" class="wide_switch" name="layout-style" id="is_wide"value="wide" checked >wide
+            </label>
+            <label class="text-dark">
+                <input type="radio" class="boxed_switch" name="layout-style" id="is_boxed"value="box" >boxed
+            </label>
+        </div>
+
+    </div>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+        )
+        wow.init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+
+        // review slick slider
+        $('.review').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            infinite: true,
+            cssEase: 'linear',
+            slide: 'li',
+            arrows: false,
+            autoplay: true,
+            autoplayspeed: 10000,
+        });
+    </script>
+    <!-- ------------------portfolio--------------------- -->
+    <script>
+        $(function () {
+
+            var filterList = {
+
+                init: function () {
+
+                    // https://mixitup.kunkalabs.com/
+                    $('#gallery').mixItUp({
+                        selectors: {
+                            target: '.gallery-item',
+                            filter: '.filter'
+                        },
+                        load: {
+                            filter: '.Link, .Videos,.Images' // show all items on page load.
+                        }
+                    });
+
+                }
+
+            };
+
+            // Filter ALL the things
+            filterList.init();
+
+        });
+
+        // ---------------------------------------------counter---------------------------------------------------------
+        $('.counting').each(function () {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({ countNum: $this.text() }).animate({
+                countNum: countTo
+            },
+                {
+                    duration: 3000,
+                    easing: 'linear',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+                });
+        });
+        // loader
+        $(window).on("load", function () {
+            $(".loader-overlay").slideUp(1000);
+        });
+
+
+        // header
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 150) {
+                $("header").addClass("active");
+            }
+            else {
+                $("header").removeClass("active");
+            }
+            // scroll top
+            if ($(this).scrollTop() > 150) {
+                $(".top").fadeIn();
+            }
+            else {
+                $(".top").fadeOut();
+            }
+        });
+
+        // scrolltop
+        $(document).ready(function () {
+            $(".top").click(function () {
+                $("html").animate({ scrollTop: 0 });
+            });
+        });
+
+        // theme switcher
+        $(document).ready(function () {
+            $(".setting li").click(function () {
+                var theme = $(this).css("color");
+                $(":root").css("--theme-color", theme);
+            })
+
+            $(".icon").click(function () {
+                $(".switch").toggleClass("active")
+            })
+            $(".close").click(function () {
+                $(".switch").toggleClass("active")
+            })
+            $(".boxed_switch").click(function(){
+                $("html").css({"margin":"0px 150px","background":"images/box-bg.png" });
+                $("header").css({"max-width":"fit-content","padding":" 0 71px"});
+            });
+            $(".wide_switch").click(function(){
+                $("html").css({"margin":"0px 0px"});
+                $("header").css({"max-width":"100%"});
+            });
+            // $(".setting2 li").click(function () {
+            //     var theme2 = $(this).css("backgroundColor");
+            //     $(":root").css("--theme-body-dark", theme2);
+            // })
+        })
+
+
+        // fencybox
+        $('[data-fancybox]').fancybox({
+            // Options will go here
+            buttons: [
+                'close'
+            ],
+            wheel: false,
+            transitionEffect: "slide",
+            // thumbs          : false,
+            // hash            : false,
+            loop: true,
+            // keyboard        : true,
+            toolbar: false,
+            // animationEffect : false,
+            // arrows          : true,
+            clickContent: false
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".dark-body").click(function () {
+                $("body").css({ "background-color": "black", "color": "white"});
+            });
+
+            $(".light-body").click(function () {
+                $("body").css({ "background-color": "white", "color": "black" });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

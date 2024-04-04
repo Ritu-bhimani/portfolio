@@ -1,0 +1,94 @@
+/* xl */
+@media (max-width:1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    .toggle {
+        display: none;
+        
+    }
+}
+
+/* lg */
+@media (max-width:1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .toggle {
+        display: none;
+        
+    }
+}
+
+/* md */
+@media (max-width:991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .w-md-1 {
+        width: 100%;
+    }
+    .w-md-2{
+        width: 50%;
+    }
+    .w-md-3{
+        width: 33.33%;
+    }
+    .social {
+        display: none;
+    }
+
+    .logo-img {
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .toggle {
+        display: flex;
+        text-align: center;
+    }
+
+    /* header */
+    .menu ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+    }
+
+    /* about */
+    .about-content{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /* price */
+    .price-content{
+        margin-bottom: 10px;
+    }
+    /*  about-home*/
+    .about-home{
+        text-align: center;
+    }
+    /* gallery */
+    .gallery-image{
+        margin-bottom: 10px;
+    }
+    /* footer */
+    .footer-2 .social{
+        display: block;
+    }
+}
+
+/* sm */
+@media (max-width:767px) {
+    .container {
+        max-width: 540px;
+    }
+    .banner-content h1{
+        font-size: 40px;
+    }
+}
+
+/* xs */
+@media (max-width:576px) {}

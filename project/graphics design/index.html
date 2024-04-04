@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap builder</title>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- ----------------------------------------------------modal---------------------------------------------------- -->
+        <div class="modal fade" id="modelid">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Ragistration form</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="py-3">
+                            <input type="text" class="form-control" placeholder="Enter your FirstName">
+                            <input type="text" class="form-control mt-2" placeholder="Enter your UserName">
+                            <input type="password" class="form-control mt-2" placeholder="Enter your Password">
+                            <input type="date" class="mt-2 form-control">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-target="#modelsubmit"
+                            data-bs-toggle="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------submit modal-------- -->
+        <div class="modal fade" id="modelsubmit" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>LogIn Form</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <label>UserName:</label>
+                            <input type="text" placeholder="Enter your UserName"><br /><br />
+                            <label>Password:</label>
+                            <input type="password" class="mt-2" placeholder="Enter your Password">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-target="#modalsuccess"
+                            data-bs-toggle="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Submit success -->
+        <div class="modal fade" id="modalsuccess" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="text-primary animate__animated animate__bounceIn text-center">Login successfully <img
+                                src="image/login.gif" alt=""></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------------------------------ofcanvas---------------------------------------------------->
+        <div class="offcanvas offcanvas-start" id="abc" data-bs-scroll="true">
+            <div class="offcanvas-header">
+                <h5>OneDu ofcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="navbar-collapse justify-content-center">
+                    <ul class="navbar-nav ">
+                        <li><a href="#" class="nav-link pe-3">Home</a></li>
+                        <li><a href="#" class="nav-link pe-3">Services</a></li>
+                        <li><a href="#" class="nav-link pe-3"> Portfolio</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle pe-3" data-bs-toggle="dropdown">pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Portfolio Details</a></li>
+                                <li><a href="#" class="dropdown-item">About</a></li>
+                                <li><a href="#" class="dropdown-item">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle pe-3" data-bs-toggle="dropdown">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Blog</a></li>
+                                <li><a href="#" class="dropdown-item">Single-Blog</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="nav-link pe-3">Contect</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!------------------------------------------------- header--------------------------------------------------------- -->
+        <header>
+            <div class="navbar navbar-expand-lg bg-dark fs-5  py-3">
+                <div class="container">
+                    <div>
+                        <img src="images/logo2.webp" alt="" width="180px">
+                    </div>
+                    <div class="order-lg-1">
+                        <button class="navbar-toggler me-2" data-bs-toggle="offcanvas" data-bs-target="#abc">
+                            <label class="navbar-toggler-icon"></label>
+                        </button>
+                        <!-- <a href="#" class="btn btn-light" data-bs-target="#modelid" data-bs-toggle="modal">Login</a> -->
+                        <a href="#form" class="btn banner-btn">Login</a>
+                    </div>
+                    <nav class="header-menu collapse navbar-collapse justify-content-center " id="show-toggle">
+                        <ul class="navbar-nav ">
+                            <li><a href="#" class="nav-link pe-3 ">Home</a></li>
+                            <li><a href="#" class="nav-link pe-3 ">Services</a></li>
+                            <li><a href="#" class="nav-link pe-3 "> Portfolio</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle  pe-3" data-bs-toggle="dropdown">pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Portfolio Details</a></li>
+                                    <li><a href="#" class="dropdown-item">About</a></li>
+                                    <li><a href="#" class="dropdown-item">Elements</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle pe-3 " data-bs-toggle="dropdown">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Blog</a></li>
+                                    <li><a href="#" class="dropdown-item">Single-Blog</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="nav-link pe-3 ">Contect</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--banner start  -->
+        <section>
+            <div class="carousel slide" id="scroll" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#scroll" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#scroll" data-bs-slide-to="1"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="banner-layer">
+                            <img src="images/banner.webp" alt="" class="img-fluid d-block w-100 vh-100">
+                        </div>
+                        <div
+                            class="carousel-caption  top-50 start-50 translate-middle position-absolute wow animate__animated animate__fadeInLeft animate__slow ">
+                            <h1 style="font-size:65px;">Startup you can build a website online using the Bootstrap
+                                builder.</h1>
+                            <a href="#" class="btn rounded-pill mt-5 banner-btn fw-semibold">Visit
+                                Our Works</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner-layer">
+                            <img src="images/banner3.webp" alt="" class="img-fluid d-block w-100 vh-100">
+                        </div>
+                        <div
+                            class="carousel-caption  top-50 start-50 translate-middle wow animate__animated animate__fadeInLeft animate__slow">
+                            <h1 style="font-size:65px;">Develop a passion for learning new things.</h1>
+                            <a href="#" class="btn rounded-pill  mt-5 banner-btn fw-semibold">Visit
+                                Our Works</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev " data-bs-target="#scroll" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#scroll" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <!--banner end  -->
+        <!-- Services start -->
+        <section class="py-5">
+            <div class="container">
+                <div class="service-title text-center py-5">
+                    <p>Services</p>
+                    <h2 class="h1">With more than 20 years of </h2>
+                    <h2 class="h1">experience we can deliver </h2>
+                    <h2 class="h1">the best product design.</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-3">
+                            <div class="card-body  text-center">
+                                <div class="m-4">
+                                    <img src="images/1.svg" alt="">
+                                </div>
+                                <div class="m-4">
+                                    <h4>Graphic design</h4>
+                                </div>
+                                <div class="m-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card borde">
+                            <div class="card-body  text-center">
+                                <div class="m-4">
+                                    <img src="images/2.svg" alt="">
+                                </div>
+                                <div class="m-4">
+                                    <h4>Graphic design</h4>
+                                </div>
+                                <div class="m-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-3">
+                            <div class="card-body text-center">
+                                <div class="m-4">
+                                    <img src="images/3.svg" alt="">
+                                </div>
+                                <div class="m-4">
+                                    <h4>Graphic design</h4>
+                                </div>
+                                <div class="m-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services end -->
+        <!-- about start -->
+        <section class="py-5 ">
+            <div class="text-light bg-dark">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/about.webp" alt="" width="100%">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="py-5 mt-5 ps-5">
+                            <p class=" text-start top-50 start-0  wow animate__animated fadeInUp">About Us</p>
+                            <h2 class="pb-3 h1 wow  animate__animated fadeInUp">Empowering individuals</h2>
+                            <p class=" wow animate__animated fadeInUp">Efficiently unleash cross-media tour function
+                                information without cross action media value. Quickly maximize timely deliverables for
+                                real-time schemas.</p>
+                            <h6 class="mt-3 wow animate__animated fadeInUp">“Function information without cross action
+                                media value.</h6>
+                            <a href="#"
+                                class="btn rounded-pill btn-primary py-2 px-4 mt-5 banner-btn fw-semibold wow animate__animated fadeInUp">About
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+        <!-- gallery start -->
+        <section class="py-5 ">
+            <div class="container">
+                <div class="service-title text-center py-5">
+                    <h2 class=" h1 mb-4  wow animate__animated fadeInUp">Featured Works </h2>
+                    <span class="wow animate__animated fadeInUp animate__delay-2s">Tour function information without
+                        cross action media value quickly</span>
+                    <p class=" wow animate__animated fadeInUp animate__delay-2s">maximize timely deliverables.</p>
+                </div>
+                <div class="row p-0">
+                    <div class="col-md-8">
+                        <div class="gallery-img position-relative overflow-hidden ">
+                            <img src="images/g1.webp" alt="" class="img-fluid wow fadeInUp w-100">
+                            <div
+                                class="gallery-content  d-flex justify-content-center align-items-center position-absolute top-0 start-0 flex-column">
+                                <p>App Design</p>
+                                <h2>Colorlib Mobile App</h2>
+                                <a href="#" class="btn banner-btn rounded-pill  fw-semibold">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-img position-relative overflow-hidden w-100 h-100">
+                            <img src="images/g2.webp" alt="" class="img-fluid wow fadeInUp w-100">
+                            <div
+                                class="gallery-content  d-flex justify-content-center align-items-center position-absolute  w-100 top-0 start-0 flex-column">
+                                <p>App Design</p>
+                                <h2>Colorlib Mobile App</h2>
+                                <a href="#" class="btn banner-btn rounded-pill fw-semibold">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-0 pt-3">
+                    <div class="col-md-4">
+                        <div class="gallery-img position-relative overflow-hidden w-100 h-100">
+                            <img src="images/g3.webp" alt="" class="img-fluid wow fadeInUp w-100">
+                            <div
+                                class="gallery-content  d-flex justify-content-center align-items-center position-absolute  w-100 top-0 start-0 flex-column">
+                                <p>App Design</p>
+                                <h2>Colorlib Mobile App</h2>
+                                <a href="#" class="btn banner-btn rounded-pill fw-semibold">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-img position-relative overflow-hidden w-100 h-100">
+                            <img src="images/g4.webp" alt="" class="img-fluid wow fadeInUp w-100">
+                            <div
+                                class="gallery-content  d-flex justify-content-center align-items-center position-absolute  w-100 top-0 start-0 flex-column">
+                                <p>App Design</p>
+                                <h2>Colorlib Mobile App</h2>
+                                <a href="#" class="btn banner-btn rounded-pill  fw-semibold">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gallery-img position-relative overflow-hidden w-100 h-100">
+                            <img src="images/g5.webp" alt="" class="img-fluid wow fadeInUp w-100">
+                            <div
+                                class="gallery-content  d-flex justify-content-center align-items-center position-absolute  w-100 top-0 start-0 flex-column">
+                                <p>App Design</p>
+                                <h2>Colorlib Mobile App</h2>
+                                <a href="#" class="btn banner-btn rounded-pill fw-semibold">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gallery end -->
+        <!-- work start -->
+        <section class="py-5 mt-5">
+            <div class="row">
+                <div class="col-md-6 px-5">
+                    <div class="work-content text-start  d-flex align-items-cente flex-column">
+                        <h2 class="pt-5 h1" style="font-size: 45px; font-weight: 400;">How we work</h2>
+                        <h6 class="py-3 fs-5">“Function information without cross action media value.</h6>
+                        <p class="pb-3">Efficiently unleash cross-media tour function information without cross action
+                            media value.
+                            Quickly maximize timely deliverables for real-time schemas.</p>
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=D7tF-cY2M9o"
+                                class="video rounded-circle text-light d-inline-block flex-row ">
+                                <i class="fa fa-play"></i></a>
+                            <span class="ps-3 fs-5">Watch Video</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/work.webp" alt="" class="rounded-start img-fluid">
+                </div>
+            </div>
+        </section>
+        <!-- work end -->
+        <!-- team start -->
+        <section>
+            <div class="container py-5">
+                <div class="service-title text-center py-5">
+                    <h2 class=" h1 mb-4  wow animate__animated fadeInUp">Our Creative Team </h2>
+                    <span class="wow animate__animated fadeInUp animate__delay-2s">Tour function information without
+                        cross action media value quickly</span>
+                    <p class=" wow animate__animated fadeInUp animate__delay-2s">maximize timely deliverables.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="team-img position-relative text-center">
+                            <img src="images/team1.webp" alt="" class="w-100">
+                            <div class="team-hover text-center position-absolute bottom-0 start-0 end-0">
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-facebook-f  "></i></a>
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-twitter "></i> </a>
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-instagram  "></i> </a>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-center ">
+                            <h3>Brandon Yeald</h3>
+                            <p>Founder &amp; CEO</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-img position-relative text-center">
+                            <img src="images/team2.webp" alt="" class="w-100">
+                            <div class="team-hover text-center position-absolute bottom-0 start-0 end-0">
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-facebook-f  "></i></a>
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-twitter "></i> </a>
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-instagram  "></i> </a>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <h3>Calvin Anderson</h3>
+                            <p>Graphics Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="team-img position-relative text-center">
+                            <img src="images/team3.webp" alt="" class="w-100">
+                            <div class="team-hover text-center position-absolute bottom-0 start-0 end-0">
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-facebook-f  "></i></a>
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-twitter "></i> </a>
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-instagram  "></i> </a>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <h3>Roman Solo</h3>
+                            <p>Wordpress Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="team-img position-relative text-center">
+                            <img src="images/team4.webp" alt="" class="w-100">
+                            <div class="team-hover text-center position-absolute bottom-0 start-0 end-0">
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-facebook-f  "></i></a>
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-twitter "></i> </a>
+                                <a href="#" class="rounded-circle text-light d-inline-block icon "> <i
+                                        class="fa-brands fa-instagram  "></i> </a>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <h3>Yeald Kin</h3>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- team end -->
+        <!-- review start -->
+        <section class="review">
+            <div class="carousel slide" id="carouselExampleControls">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="container">
+                            <div class="text-light text-center row justify-content-center ">
+                                <div>
+
+                                    <img src="images/quote.svg" alt="" class="pb-4">
+                                    <p class="fs-5">Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+                                        sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices
+                                        nec sed neque.
+                                        Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                    <div>
+                                        <img src="images/review2.webp" class="mt-3" alt="">
+                                        <h3>robot thomasn</h3>
+                                        <p>business owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item  ">
+                        <div class="container">
+                            <div class="text-light text-center row justify-content-center ">
+                                <div>
+
+                                    <img src="images/quote.svg" alt="" class="pb-4">
+                                    <p class="fs-5">Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+                                        sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices
+                                        nec sed neque.
+                                        Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                    <div>
+                                        <img src="images/review2.webp" class="mt-3" alt="">
+                                        <h3>robot thomasn</h3>
+                                        <p>business owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item  ">
+                        <div class="container">
+                            <div class="text-light text-center row justify-content-center ">
+                                <div>
+
+                                    <img src="images/quote.svg" alt="" class="pb-4">
+                                    <p class="fs-5">Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
+                                        sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices
+                                        nec sed neque.
+                                        Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                    <div>
+                                        <img src="images/review2.webp" class="mt-3" alt="">
+                                        <h3>robot thomasn</h3>
+                                        <p>business owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- review end -->
+        <!-- get in touch satrt -->
+        <section id="form">
+            <div class="container">
+                <div class="service-title text-center py-5">
+                    <h2 class=" h1 mb-4  wow animate__animated fadeInUp">Get in Touch</h2>
+                    <span class="wow animate__animated fadeInUp ">Tour function information without cross action media
+                        value quickly</span>
+                    <p class=" wow animate__animated fadeInUp ">maximize timely deliverables.</p>
+                </div>
+                <form class="w-50 mx-auto">
+                    <div class="px-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control rounded-pill py-2 my-3"
+                                    placeholder="Enter Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="Email" class="form-control rounded-pill py-2 my-3"
+                                    placeholder="Enter Your Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Subject" class="form-control rounded-pill py-2 my-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea type="text" placeholder="Message"
+                                    class="form-control rounded-4 py-2 my-3 h-100"></textarea>
+                            </div>
+                        </div>
+                        <a href="#" class="btn banner-btn w-100  my-5 py-2 rounded-pill fw-semibold">Send message</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- get in touch end -->
+    </main>
+    <footer class="bg-dark text-light py-4 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6  col-lg-3">
+                    <img src="images/logo2.webp" alt="" width="180px">
+                </div>
+                <div class="col-sm-6  col-lg-6">
+                    <nav class=" footer-menu justify-content-center ">
+                        <ul class=" d-md-flex list-unstyled">
+                            <li><a href="#" class="nav-link pe-3">Home</a></li>
+                            <li><a href="#" class="nav-link pe-3">Services</a></li>
+                            <li><a href="#" class="nav-link pe-3"> Portfolio</a></li>
+                            <li><a href="#" class="nav-link pe-3">pages</a></li>
+                            <li><a href="#" class="nav-link pe-3 ">Blog</a></li>
+                            <li><a href="#" class="nav-link pe-3 ">Contect</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-6  col-lg-3">
+                    <div>
+                        <div class=" footer-icon text-center ">
+                            <a href="#" class="rounded-circle  d-inline-block icon border border-1"> <i
+                                    class="fa-brands fa-facebook-f  "></i></a>
+                            <a href="#" class="rounded-circle  d-inline-block icon border border-1"> <i
+                                    class="fa-brands fa-twitter "></i> </a>
+                            <a href="#" class="rounded-circle  d-inline-block icon border border-1"> <i
+                                    class="fa-brands fa-instagram  "></i> </a>
+                            <a href="#" class="rounded-circle  d-inline-block icon border border-1"> <i
+                                    class="fa-brands fa-google-plus-g"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark text-light py-4 mt-5  h6 text-center border-secondary border-top">
+                <div class="container">
+                    <p>Copyright ©2022 All rights reserved | This template is made with <i
+                            class="fa-regular fa-heart"></i></i>
+                        by <span style="color: #615cfd;"><a href="#">Colorlib</a> </span> </p>
+                </div>
+            </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+</body>
+
+</html>
